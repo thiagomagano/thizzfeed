@@ -1,0 +1,32 @@
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #eee;
+    font-size: 3em;
+}
+
+h2 {
+    color: #ffcd3c;
+    font-size: 2em;
+}
+
+.container {
+    text-align: center;
+    padding: 2% 20% 2%;
+    background-color: #370037;
+    color: #ffcd3c;
+}
+
+.pergunta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+}
+
+.alternativa {
+    background-color: #a66fa6;
+    padding: 2em 0 2em;
+}
