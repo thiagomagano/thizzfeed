@@ -117,11 +117,11 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
     var listaFinal = [];
 
-    listaFinal.push(checaAlternativa("e"))
-    listaFinal.push(checaAlternativa("f"))
-    listaFinal.push(checaAlternativa("a"))
-    listaFinal.push(checaAlternativa("b"))
-    listaFinal.push(checaAlternativa("f"))
+    listaFinal.push(checaAlternativa(req.body.p1))
+    listaFinal.push(checaAlternativa(req.body.p2))
+    listaFinal.push(checaAlternativa(req.body.p3))
+    listaFinal.push(checaAlternativa(req.body.p4))
+    listaFinal.push(checaAlternativa(req.body.p5))
 
     console.log(listaFinal);
 
