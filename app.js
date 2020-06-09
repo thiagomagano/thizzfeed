@@ -40,7 +40,7 @@ msg2 = "O bichinho que inventa moda... tu é uma mente criativa que tem sempre a
 
 msg3 = "Focada é ela... quando tu poem algo na cabeça ninguem te tira né? só descansa quando consegue fazer tudinho o que quer e isso eu admiro muito, tua determinação me inspira e me orgulha muito!! s2"
 
-msg4 = "Ba, nesse eu não foi nem falar nada né? é a guria mais gata que eu ja fiquei e sempre vou lembrar do quão orgulhoso eu fiquei a primeira vez que eu te beijei.  te amo sua linda <3"
+msg4 = "Ba, nesse eu não vou nem falar nada né? é a guria mais gata que eu ja fiquei e sempre vou lembrar do quão orgulhoso eu fiquei a primeira vez que eu te beijei.  te amo sua linda <3"
 
 msg5 = "Me da uma mão ai? Sou apaixonado por ti por sempre estar disposta a ajudar seja quem for, sempre busca a melhor forma possível de ser útil e isso eu admiro muito!! s2"
 
