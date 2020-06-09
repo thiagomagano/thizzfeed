@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/estilo.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&family=Oswald&display=swap" rel="stylesheet">
 
     <title>Quiz do thithi</title>
 </head>
 
 <body>
     <header class="container">
-        <nav><span id=logo>ThizzFeed</span></nav>
+        <nav>
+            <p>ThizzFeed
+                <img class="logo-img" src="/images/thizzfeedlogo.png" alt="logo">
+            </p>
+        </nav>
 
         <h1>Descubra qual Mimi é você:</h1>
         <p>Existem varias Mimi's que eu amo, descubra qual delas você é.</p>
@@ -24,8 +28,10 @@
             <h2>Primeiro, diga um Sentimento:</h2>
             <div class="pergunta">
                 <div class="alternativa">
-                    <label for="radio">Amor</label>
+                    <label for="radio">
+                        <span>Amor</span>
                     <input type="radio" name="p1" value="a">
+                </label>
                 </div>
                 <div class="alternativa">
                     <label for="radio">Raiva</label>

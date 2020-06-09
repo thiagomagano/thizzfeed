@@ -16,6 +16,7 @@ h2 {
 p {
     font-size: 1.2em;
     font-weight: 500;
+    color: white;
 }
 
 img {
@@ -24,6 +25,20 @@ img {
 
 label {
     font-size: 1.8em;
+}
+
+nav p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.logo-img {
+    width: 40px;
 }
 
 .container {
@@ -40,8 +55,17 @@ label {
 }
 
 .alternativa {
-    background-color: #a66fa6;
+    background-color: #530e53;
     padding: 2em 0 2em;
+    opacity: 0.7;
+}
+
+.alternativa:hover {
+    opacity: 1;
+}
+
+.alternativa:checked {
+    opacity: 1;
 }
 
 .azul {
