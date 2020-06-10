@@ -7,6 +7,9 @@
     <link href="/estilo.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&family=Oswald&display=swap" rel="stylesheet">
+    <!-- favico -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <title>Quiz do thithi</title>
 </head>
@@ -20,47 +23,48 @@
         </nav>
 
         <h1>Descubra qual Mimi é você:</h1>
-        <p>Existem varias Mimi's que eu amo, descubra qual delas você é.</p>
+        <img class="img-ini" src="/images/mimi-ini.jpg">
+        <p>São muitas Mimi's (e eu amo todas rs), responda as perguntas e te direi qual delas você é.</p>
     </header>
 
-    <form method="POST">
+    <form method="POST" action="/resp">
         <div id="1" class="container">
             <h2>Primeiro, diga um Sentimento:</h2>
             <div class="pergunta">
 
                 <label>
-                <input type="radio" name="p1" value="a"/>
+                <input type="radio" name="p1" value="a"/ required>
                 <div class="box amor">
                         <span>Amor</span>
                 </div>
                 </label>
 
                 <label>
-                    <input type="radio" name="p1" value="b">
+                    <input type="radio" name="p1" value="b" required>
                     <div class="box ciumes">
                             <span>Ciúmes</span>
                     </div>
                     </label>
-                <label>
-                        <input type="radio" name="p1" value="c">
+                <label> 
+                        <input type="radio" name="p1" value="c" required> 
                         <div class="box carinho">
                                 <span>Carinho</span>
                         </div>
                         </label>
                 <label>
-                            <input type="radio" name="p1" value="d">
+                            <input type="radio" name="p1" value="d" required>
                             <div class="box felicidade">
                                     <span>Felicidade</span>
                             </div>
                             </label>
                 <label>
-                                <input type="radio" name="p1" value="f">
+                                <input type="radio" name="p1" value="f" required>
                                 <div class="box amizade">
                                         <span>Amizade</span>
                                 </div>
                                 </label>
                 <label>
-                                    <input type="radio" name="p1" value="e">
+                                    <input type="radio" name="p1" value="e" required>
                                     <div class="box liberdade">
                                             <span>Liberdade</span>
                                     </div>
@@ -74,42 +78,42 @@
             <h2>Agora, escolha uma festa:</h2>
             <div class="pergunta">
                 <label>
-                        <input type="radio" name="p2" value="a">
+                        <input type="radio" name="p2" value="a" required>
                         <div class="box aniversario">
                                 <span>Aniversário</span>
                         </div>
                     </label>
 
                 <label>
-                        <input type="radio" name="p2" value="b">
+                        <input type="radio" name="p2" value="b" required>
                         <div class="box natal">
                                 <span>Natal</span>
                         </div>
                     </label>
 
                 <label>
-                        <input type="radio" name="p2" value="c">
+                        <input type="radio" name="p2" value="c" required>
                         <div class="box pascoa">
                                 <span>Páscoa</span>
                         </div>
                     </label>
 
                 <label>
-                        <input type="radio" name="p2" value="d">
+                        <input type="radio" name="p2" value="d" required>
                         <div class="box carnaval">
                                 <span>Carnaval</span>
                         </div>
                     </label>
 
                 <label>
-                        <input type="radio" name="p2" value="e">
+                        <input type="radio" name="p2" value="e" required>
                         <div class="box junina">
                                 <span>Festa Junina</span>
                         </div>
                     </label>
 
                 <label>
-                        <input type="radio" name="p2" value="f">
+                        <input type="radio" name="p2" value="f" required>
                         <div class="box ano-novo">
                                 <span>Ano Novo</span>
                         </div>
@@ -123,38 +127,38 @@
             <div class="pergunta">
 
                 <label>
-                    <input type="radio" name="p3" value="a">
+                    <input type="radio" name="p3" value="a" required>
                     <div class="box sorisso">
                             <span>Sorriso</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p3" value="b">
+                    <input type="radio" name="p3" value="b" required>
                     <div class="box estilo">
                             <span>Estilo</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p3" value="c">
+                    <input type="radio" name="p3" value="c" required> 
                     <div class="box pegada">
                             <span>Pegada</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p3" value="d">
+                    <input type="radio" name="p3" value="d" required>
                     <div class="box inteligencia">
                             <span>Inteligência</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p3" value="e">
+                    <input type="radio" name="p3" value="e" required>
                     <div class="box bom-humor">
                             <span>Bom Humor</span>
                     </div>
                 </label>
 
                 <label>
-                    <input type="radio" name="p3" value="f">
+                    <input type="radio" name="p3" value="f" required>
                     <div class="box afeto">
                             <span>Afeto</span>
                     </div>
@@ -169,37 +173,37 @@
             <div class="pergunta">
 
                 <label>
-                    <input type="radio" name="p4" value="a">
+                    <input type="radio" name="p4" value="a" required>
                     <div class="box sushi">
                             <span>Sushi</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p4" value="b">
+                    <input type="radio" name="p4" value="b" required>
                     <div class="box dogao">
                             <span>Dogão</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p4" value="c">
+                    <input type="radio" name="p4" value="c" required>
                     <div class="box churrasco">
                             <span>Churrasco</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p4" value="d">
+                    <input type="radio" name="p4" value="d" required>
                     <div class="box bergamota">
                             <span>Bergamota</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p4" value="e">
+                    <input type="radio" name="p4" value="e" required>
                     <div class="box bolo">
                             <span>Bolo</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p4" value="f">
+                    <input type="radio" name="p4" value="f" required>
                     <div class="box rabada">
                             <span>Rabada</span>
                     </div>
@@ -213,37 +217,37 @@
             <h2>Por fim, a pessoa que tu mais gosta:</h2>
             <div class="pergunta">
                 <label>
-                    <input type="radio" name="p5" value="a">
+                    <input type="radio" name="p5" value="a" required>
                     <div class="box mae">
                             <span>Mamãe</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p5" value="b">
+                    <input type="radio" name="p5" value="b" required>
                     <div class="box pai">
                             <span>Papai</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p5" value="c">
+                    <input type="radio" name="p5" value="c" required>
                     <div class="box berga">
                             <span>Bergamota</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p5" value="d">
+                    <input type="radio" name="p5" value="d" required>
                     <div class="box mana">
                             <span>Mana</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p5" value="e">
+                    <input type="radio" name="p5" value="e" required>
                     <div class="box thi">
                             <span>Thithi</span>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="p5" value="f">
+                    <input type="radio" name="p5" value="f" required>
                     <div class="box mimi">
                             <span>Mimi</span>
                     </div>
@@ -259,9 +263,10 @@
         </div>
 
 
-        <div class="container footer">
+        <div class="container cta">
             <button class="btn-1" type="submit">DESCOBRIR</button>
         </div>
+
     </form>
 </body>
 

@@ -16,7 +16,7 @@ body {
 
 h1 {
     color: var(--branco);
-    font-size: 3.5em;
+    font-size: 3.3rem;
 }
 
 h2 {
@@ -37,7 +37,7 @@ nav p {
 
 p {
     color: var(--cinza);
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0
 }
 
@@ -50,6 +50,19 @@ p {
     padding: 2% 20% 0;
     background-color: var(--principal);
     height: 100%;
+}
+
+.img-ini {
+    width: 200px;
+    height: 250px;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+    margin-bottom: 20px;
+}
+
+.img-ini:hover {
+    opacity: 1;
 }
 
 input[type="radio"] {
@@ -302,6 +315,94 @@ input[type="radio"] {
     transition: all 0.5s;
 }
 
-.footer {
+.cta {
     padding: 4% 0 3%;
+}
+
+
+/* //pagina resp */
+
+.container-resp {
+    text-align: center;
+    padding: 2% 20% 0;
+    background-color: var(--principal);
+}
+
+.h-resp {
+    color: var(--secundaria);
+    text-align: center;
+}
+
+.h-resp h1 {
+    margin-top: 10px;
+}
+
+.img-resp {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.img-resp img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+.p-resp {
+    margin: 20px auto 30px;
+    color: var(--secundaria);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.retorna {
+    margin: 50px auto 35px auto;
+}
+
+.btn-resp {
+    font-family: monospace;
+    background: var(--secundaria);
+    color: var(--principal);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1.5rem;
+    border: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+.btn-resp::after {
+    content: "↩️";
+    font-weight: 300;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.btn-resp:hover {
+    background: var(--branco);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 15px var(--secundaria);
+    box-shadow: 0px 6px 15px var(--secundaria);
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+
+.btn-resp:hover::after {
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+footer p {
+    padding: 20px 0;
+    font-size: 0.8em;
 }
