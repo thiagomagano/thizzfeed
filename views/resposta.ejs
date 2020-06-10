@@ -11,17 +11,30 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>
-            Você é:
-            <%= respTitulo %>
-        </h1>
-        <img src=<%=respImg %> alt="Foto Mimi" />
+    <div class="container-resp">
+        <div class="h-resp">
+            <h1>
+                Você é:
+                <%= respTitulo %>
+            </h1>
+        </div>
+        <div class="img-resp">
+            <img src=<%=respImg %> alt="Foto Mimi" />
+        </div>
 
-        <p>
+        <p class="p-resp">
             <%= respDesc %>
         </p>
+        <div class="retorna">
+            <a class="btn-resp" href="/">Refazer</a>
+        </div>
+
+        <footer>
+            <p>&copy 2020 Feito com 💜 por Thiago Magano.</p>
+        </footer>
     </div>
+
+
 
 </body>
 
