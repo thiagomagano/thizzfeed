@@ -7,6 +7,9 @@
     <link href="/estilo.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&family=Oswald&display=swap" rel="stylesheet">
+    <!-- favico -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <title>Quiz do thithi</title>
 </head>
@@ -20,102 +23,147 @@
         </nav>
 
         <h1>Descubra qual Mimi é você:</h1>
-        <p>Existem varias Mimi's que eu amo, descubra qual delas você é.</p>
+        <img class="img-ini" src="/images/mimi-ini.jpg">
+        <p>São muitas Mimi's (e eu amo todas rs), responda as perguntas e te direi qual delas você é.</p>
     </header>
 
-    <form method="POST">
+    <form method="POST" action="/resp">
         <div id="1" class="container">
             <h2>Primeiro, diga um Sentimento:</h2>
             <div class="pergunta">
-                <div class="alternativa">
-                    <label for="radio">
+
+                <label>
+                <input type="radio" name="p1" value="a"/ required>
+                <div class="box amor">
                         <span>Amor</span>
-                    <input type="radio" name="p1" value="a">
+                </div>
                 </label>
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Raiva</label>
-                    <input type="radio" name="p1" value="b">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Ciúmes</label>
-                    <input type="radio" name="p1" value="c">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Felicidade</label>
-                    <input type="radio" name="p1" value="d">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Liberdade</label>
-                    <input type="radio" name="p1" value="e">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Amizade</label>
-                    <input type="radio" name="p1" value="f">
-                </div>
+
+                <label>
+                    <input type="radio" name="p1" value="b" required>
+                    <div class="box ciumes">
+                            <span>Ciúmes</span>
+                    </div>
+                    </label>
+                <label> 
+                        <input type="radio" name="p1" value="c" required> 
+                        <div class="box carinho">
+                                <span>Carinho</span>
+                        </div>
+                        </label>
+                <label>
+                            <input type="radio" name="p1" value="d" required>
+                            <div class="box felicidade">
+                                    <span>Felicidade</span>
+                            </div>
+                            </label>
+                <label>
+                                <input type="radio" name="p1" value="f" required>
+                                <div class="box amizade">
+                                        <span>Amizade</span>
+                                </div>
+                                </label>
+                <label>
+                                    <input type="radio" name="p1" value="e" required>
+                                    <div class="box liberdade">
+                                            <span>Liberdade</span>
+                                    </div>
+                </label>
+
+
             </div>
-
-
         </div>
 
         <div id="2" class="container">
-            <h2>Agora, escolha uma cor:</h2>
+            <h2>Agora, escolha uma festa:</h2>
             <div class="pergunta">
-                <div class="alternativa azul">
-                    <label for="radio">Azul</label>
-                    <input type="radio" name="p2" value="a">
-                </div>
-                <div class="alternativa branco">
-                    <label for="radio">Branco</label>
-                    <input type="radio" name="p2" value="b">
-                </div>
-                <div class="alternativa preto">
-                    <label for="radio">Preto</label>
-                    <input type="radio" name="p2" value="c">
-                </div>
-                <div class="alternativa rosa">
-                    <label for="radio">Rosa</label>
-                    <input type="radio" name="p2" value="d">
-                </div>
-                <div class="alternativa vermelho">
-                    <label for="radio">Vermelho</label>
-                    <input type="radio" name="p2" value="e">
-                </div>
-                <div class="alternativa verde">
-                    <label for="radio">Verde</label>
-                    <input type="radio" name="p2" value="f">
-                </div>
-            </div>
+                <label>
+                        <input type="radio" name="p2" value="a" required>
+                        <div class="box aniversario">
+                                <span>Aniversário</span>
+                        </div>
+                    </label>
 
+                <label>
+                        <input type="radio" name="p2" value="b" required>
+                        <div class="box natal">
+                                <span>Natal</span>
+                        </div>
+                    </label>
+
+                <label>
+                        <input type="radio" name="p2" value="c" required>
+                        <div class="box pascoa">
+                                <span>Páscoa</span>
+                        </div>
+                    </label>
+
+                <label>
+                        <input type="radio" name="p2" value="d" required>
+                        <div class="box carnaval">
+                                <span>Carnaval</span>
+                        </div>
+                    </label>
+
+                <label>
+                        <input type="radio" name="p2" value="e" required>
+                        <div class="box junina">
+                                <span>Festa Junina</span>
+                        </div>
+                    </label>
+
+                <label>
+                        <input type="radio" name="p2" value="f" required>
+                        <div class="box ano-novo">
+                                <span>Ano Novo</span>
+                        </div>
+                    </label>
+
+            </div>
         </div>
 
         <div id="3" class="container">
             <h2>O que você mais gosta no seu namorado:</h2>
             <div class="pergunta">
-                <div class="alternativa">
-                    <label for="radio">Sorriso</label>
-                    <input type="radio" name="p3" value="a">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Estilo</label>
-                    <input type="radio" name="p3" value="b">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Pegada</label>
-                    <input type="radio" name="p3" value="c">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Inteligência</label>
-                    <input type="radio" name="p3" value="d">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Bom Humor</label>
-                    <input type="radio" name="p3" value="e">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Afeto</label>
-                    <input type="radio" name="p3" value="f">
-                </div>
+
+                <label>
+                    <input type="radio" name="p3" value="a" required>
+                    <div class="box sorisso">
+                            <span>Sorriso</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p3" value="b" required>
+                    <div class="box estilo">
+                            <span>Estilo</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p3" value="c" required> 
+                    <div class="box pegada">
+                            <span>Pegada</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p3" value="d" required>
+                    <div class="box inteligencia">
+                            <span>Inteligência</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p3" value="e" required>
+                    <div class="box bom-humor">
+                            <span>Bom Humor</span>
+                    </div>
+                </label>
+
+                <label>
+                    <input type="radio" name="p3" value="f" required>
+                    <div class="box afeto">
+                            <span>Afeto</span>
+                    </div>
+                </label>
+
             </div>
 
         </div>
@@ -123,69 +171,102 @@
         <div id="4" class="container">
             <h2>Escolha uma Comida:</h2>
             <div class="pergunta">
-                <div class="alternativa">
-                    <label for="radio">Sushi</label>
-                    <input type="radio" name="p4" value="a">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Dogão</label>
-                    <input type="radio" name="p4" value="b">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Lasanha</label>
-                    <input type="radio" name="p4" value="c">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Bergamota</label>
-                    <input type="radio" name="p4" value="d">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Bolo</label>
-                    <input type="radio" name="p4" value="e">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Rabada</label>
-                    <input type="radio" name="p4" value="f">
-                </div>
+
+                <label>
+                    <input type="radio" name="p4" value="a" required>
+                    <div class="box sushi">
+                            <span>Sushi</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p4" value="b" required>
+                    <div class="box dogao">
+                            <span>Dogão</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p4" value="c" required>
+                    <div class="box churrasco">
+                            <span>Churrasco</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p4" value="d" required>
+                    <div class="box bergamota">
+                            <span>Bergamota</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p4" value="e" required>
+                    <div class="box bolo">
+                            <span>Bolo</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p4" value="f" required>
+                    <div class="box rabada">
+                            <span>Rabada</span>
+                    </div>
+                </label>
+
             </div>
 
         </div>
 
         <div id="5" class="container">
-            <h2>Por fim, a Pessoa que você mais gosta no mundo:</h2>
+            <h2>Por fim, a pessoa que tu mais gosta:</h2>
             <div class="pergunta">
-                <div class="alternativa">
-                    <label for="radio">Mãe</label>
-                    <input type="radio" name="p5" value="a">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Pai</label>
-                    <input type="radio" name="p5" value="b">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Bergamota</label>
-                    <input type="radio" name="p5" value="c">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Irmã</label>
-                    <input type="radio" name="p5" value="d">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Thithi</label>
-                    <input type="radio" name="p5" value="e">
-                </div>
-                <div class="alternativa">
-                    <label for="radio">Mimi</label>
-                    <input type="radio" name="p5" value="f">
-                </div>
+                <label>
+                    <input type="radio" name="p5" value="a" required>
+                    <div class="box mae">
+                            <span>Mamãe</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p5" value="b" required>
+                    <div class="box pai">
+                            <span>Papai</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p5" value="c" required>
+                    <div class="box berga">
+                            <span>Bergamota</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p5" value="d" required>
+                    <div class="box mana">
+                            <span>Mana</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p5" value="e" required>
+                    <div class="box thi">
+                            <span>Thithi</span>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="p5" value="f" required>
+                    <div class="box mimi">
+                            <span>Mimi</span>
+                    </div>
+                </label>
+
+
+
+
+
+
             </div>
 
         </div>
 
 
-        <div class="container">
-            <button type="submit">Enviar Resposta</button>
+        <div class="container cta">
+            <button class="btn-1" type="submit">DESCOBRIR</button>
         </div>
+
     </form>
 </body>
 

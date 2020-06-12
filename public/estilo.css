@@ -1,34 +1,32 @@
+/* variaveis */
+
+:root {
+    --principal: #370037;
+    --secundaria: #ffcd3c;
+    --aux: #550e52;
+    --branco: #eee;
+    --preto: #212121;
+    --cinza: #aaa;
+}
+
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    color: #eee;
-    font-size: 3.5em;
+    color: var(--branco);
+    font-size: 3.3rem;
 }
 
 h2 {
-    color: #ffcd3c;
+    color: var(--secundaria);
     font-size: 2.5em;
-}
-
-p {
-    font-size: 1.2em;
-    font-weight: 500;
-    color: white;
-}
-
-img {
-    width: 19em;
-}
-
-label {
-    font-size: 1.8em;
+    margin-bottom: 60px;
 }
 
 nav p {
-    color: white;
+    color: var(--branco);
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 1.7rem;
@@ -37,63 +35,374 @@ nav p {
     margin-top: 0;
 }
 
+p {
+    color: var(--cinza);
+    font-size: 1.1em;
+    margin: 0
+}
+
 .logo-img {
     width: 40px;
 }
 
 .container {
     text-align: center;
-    padding: 2% 20% 2%;
-    background-color: #370037;
-    color: #ffcd3c;
+    padding: 2% 20% 0;
+    background-color: var(--principal);
+    height: 100%;
 }
 
-.pergunta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2em;
+.img-ini {
+    width: 200px;
+    height: 250px;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+    margin-bottom: 20px;
 }
 
-.alternativa {
-    background-color: #530e53;
-    padding: 2em 0 2em;
-    opacity: 0.7;
-}
-
-.alternativa:hover {
+.img-ini:hover {
     opacity: 1;
 }
 
-.alternativa:checked {
+input[type="radio"] {
+    display: none;
+}
+
+.pergunta input[type="radio"]:checked+.box {
+    background-color: var(--secundaria);
+}
+
+.pergunta input[type="radio"]:checked+.box span {
+    color: var(--aux);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
+}
+
+.pergunta input[type="radio"]:checked+.box span:before {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
 }
 
-.azul {
-    background-color: #4183a2;
-    color: #eee;
+.pergunta .box {
+    width: 200px;
+    height: 200px;
+    background-color: var(--aux);
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+    will-change: transition;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: "Dax", sans-serif;
+    font-weight: 900;
 }
 
-.preto {
-    background-color: #111;
-    color: #eee;
+.pergunta .box:active {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 
-.branco {
-    background-color: #eee;
-    color: #222;
+.pergunta .box span {
+    color: var(--secundaria);
+    position: absolute;
+    -webkit-transform: translate(0, 60px);
+    transform: translate(0, 60px);
+    left: 0;
+    right: 0;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-size: 1.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.rosa {
-    background-color: #ff9595;
-    color: #eee;
+.pergunta .box span:before {
+    font-size: 1.2em;
+    display: block;
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    font-weight: normal;
 }
 
-.vermelho {
-    background-color: #d92027;
-    color: #eee;
+
+/* colocando emojis */
+
+
+/* pergunta 1 */
+
+.pergunta .amor span:before {
+    content: '💑';
 }
 
-.verde {
-    background-color: #a8df65;
-    color: #eee;
+.pergunta .ciumes span:before {
+    content: '😠';
+}
+
+.pergunta .carinho span:before {
+    content: '🤗';
+}
+
+.pergunta .felicidade span:before {
+    content: '😁';
+}
+
+.pergunta .amizade span:before {
+    content: '🤝';
+}
+
+.pergunta .liberdade span:before {
+    content: '💃';
+}
+
+
+/* pergunta 2 */
+
+.pergunta .aniversario span:before {
+    content: '🎈';
+}
+
+.pergunta .natal span:before {
+    content: '🎅';
+}
+
+.pergunta .pascoa span:before {
+    content: '🐰';
+}
+
+.pergunta .carnaval span:before {
+    content: '🎊';
+}
+
+.pergunta .junina span:before {
+    content: '🌽';
+}
+
+.pergunta .ano-novo span:before {
+    content: '✨';
+}
+
+
+/* pergunta 3 */
+
+.pergunta .sorisso span:before {
+    content: '😄';
+}
+
+.pergunta .estilo span:before {
+    content: '🤵🏻';
+}
+
+.pergunta .pegada span:before {
+    content: '💋';
+}
+
+.pergunta .inteligencia span:before {
+    content: '🧠';
+}
+
+.pergunta .bom-humor span:before {
+    content: '😂';
+}
+
+.pergunta .afeto span:before {
+    content: '🧑‍🤝‍🧑';
+}
+
+
+/* pergunta 4 */
+
+.pergunta .sushi span:before {
+    content: '🍣';
+}
+
+.pergunta .dogao span:before {
+    content: '🌭';
+}
+
+.pergunta .churrasco span:before {
+    content: '🥩';
+}
+
+.pergunta .bergamota span:before {
+    content: '🍊';
+}
+
+.pergunta .bolo span:before {
+    content: '🎂';
+}
+
+.pergunta .rabada span:before {
+    content: '🐂';
+}
+
+
+/* pergunta 5 */
+
+.pergunta .mae span:before {
+    content: '👩‍👧';
+}
+
+.pergunta .pai span:before {
+    content: '👨‍👧';
+}
+
+.pergunta .berga span:before {
+    content: '🐾';
+}
+
+.pergunta .mana span:before {
+    content: '👧🏼';
+}
+
+.pergunta .thi span:before {
+    content: '👨‍💻';
+}
+
+.pergunta .mimi span:before {
+    content: '💁‍♀️';
+}
+
+
+/* BOTÃO */
+
+.btn-1 {
+    font-family: Hack, monospace;
+    background: var(--secundaria);
+    color: var(--principal);
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1.5rem;
+    border: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+.btn-1::after {
+    content: "🔎";
+    font-weight: 400;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.btn-1:hover {
+    background: var(--branco);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 15px var(--secundaria);
+    box-shadow: 0px 6px 15px var(--secundaria);
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+
+.btn-1:hover::after {
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.cta {
+    padding: 4% 0 3%;
+}
+
+
+/* //pagina resp */
+
+.container-resp {
+    text-align: center;
+    padding: 2% 20% 0;
+    background-color: var(--principal);
+}
+
+.h-resp {
+    color: var(--secundaria);
+    text-align: center;
+}
+
+.h-resp h1 {
+    margin-top: 10px;
+}
+
+.img-resp {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.img-resp img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+.p-resp {
+    margin: 20px auto 30px;
+    color: var(--secundaria);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.retorna {
+    margin: 50px auto 35px auto;
+}
+
+.btn-resp {
+    font-family: monospace;
+    background: var(--secundaria);
+    color: var(--principal);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 1.5rem;
+    border: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    position: relative;
+}
+
+.btn-resp::after {
+    content: "↩️";
+    font-weight: 300;
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.btn-resp:hover {
+    background: var(--branco);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 15px var(--secundaria);
+    box-shadow: 0px 6px 15px var(--secundaria);
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+
+.btn-resp:hover::after {
+    opacity: 1;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+footer p {
+    padding: 20px 0;
+    font-size: 0.8em;
 }
